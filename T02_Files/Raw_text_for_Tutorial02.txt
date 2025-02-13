@@ -1,0 +1,28 @@
+HTML
+
+Definition
+
+HTML (HyperText Markup Language) allows you to create web page using tags. A browser interprets the tags and displays the web page content accordingly.
+
+Tag Functions
+
+HTML Tags allow you to 
+
+Format page with background colour 
+Format font size, type, colour and style 
+Create list of items 
+Insert picture and other objects 
+Insert hyperlink to other web page 
+
+--------------------------------------------------------------------------------
+
+Some keywords
+
+Tag 
+It tells the browser how to interpret and display the object 
+
+Attribute 
+It describes a particular tag setting/behavior 
+
+Text 
+The main content of the web page
