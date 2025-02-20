@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>table</title>
+	</head>
+	<body>
+		<!-- the <table> tag opens a table -->
+		<table border = "1" width = "40%" 
+			summary = "This table provides information about
+			the price of fruit">
+        <!-- the <caption> tag summarizes the table's    -->
+        <!-- contents (this helps the visually impaired) -->
+        <caption><strong>Price of Fruit</strong></caption>
+
+        <!-- the <thead> is the first section of a table -->
+        <!-- it formats the table header area            -->
+        <thead>
+			<tr>              <!-- <tr> inserts a table row -->
+               <th>Fruit</th> <!-- insert a heading cell -->
+               <th>Price</th>
+			</tr>
+		</thead>
+
+		<!-- all table content is enclosed  -->
+        <!-- within the <tbody>             -->
+		<tbody>
+			<tr>
+				<td>Apple</td> <!-- insert a data cell -->
+				<td>$0.25</td>
+            </tr>
+
+            <tr>
+				<td>Orange</td>
+				<td>$0.50</td>
+            </tr>
+
+            <tr>
+				<td>Banana</td>
+				<td>$1.00</td>
+            </tr>
+
+            <tr>
+				<td>Pineapple</td>
+				<td>$2.00</td>
+            </tr>
+		</tbody>
+
+        <!-- the <tfoot> is the last section of a table -->
+        <!-- it formats the table footer                -->
+        <tfoot>
+			<tr>
+				<th>Total</th>
+				<th>$3.75</th>
+            </tr>
+        </tfoot>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Internet and WWW How to Program - Forms</title>
+	</head>
+   <body>
+		<h1>Feedback Form</h1>
+
+		<p>Please fill out this form to help 
+         us improve our site.</p>
+
+		<!-- this tag starts the form, gives the   -->
+		<!-- method of sending information and the -->
+		<!-- location of form scripts              -->
+		<form method = "post" action = "/cgi-bin/formmail">
+
+			<p>
+            <!-- hidden inputs contain non-visual -->
+            <!-- information                      -->
+            <input type = "hidden" name = "recipient"
+               value = "sc.chan@cpce-polyu.edu.hk" />
+            <input type = "hidden" name = "subject" 
+               value = "Feedback Form" />
+            <input type = "hidden" name = "redirect" 
+               value = "main.html" /> 
+			</p>
+
+			<!-- <input type = "text"> inserts a text box -->
+			<p>
+			<label>Name:
+				<input name = "name" type = "text" size = "25"
+                  maxlength = "30" />
+            </label></p>
+  
+			<p>
+            <!-- input types "submit" and "reset" insert  -->
+            <!-- buttons for submitting and clearing the  -->
+            <!-- form's contents                          -->
+            <input type = "submit" value = 
+               "Submit Your Entries" />
+            <input type = "reset" value = 
+               "Clear Your Entries" />
+			</p>   
+		</form>
+	</body>
+</html>

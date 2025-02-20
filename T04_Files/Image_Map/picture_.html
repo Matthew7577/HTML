@@ -1,0 +1,36 @@
+<HTML>
+	<HEAD>
+		<TITLE>
+			Image Map
+		</TITLE>
+	</HEAD>
+	<BODY>
+		<P>
+			<!-- the <map> tag defines an image map -->
+			<MAP ID = "picture" NAME = "picture">
+				<!-- SHAPE = "rect" indicates a rectangular    --> 
+				<!-- area, with coordinates for the upper-left -->
+				<!-- and lower-right corners                   -->
+				<AREA HREF = "form.html" SHAPE = "rect" COORDS = "2,123,54,143">
+				<AREA HREF = "contact.html" SHAPE = "rect" COORDS = "126,122,198,143">
+				<AREA HREF = "main.html" SHAPE = "rect" COORDS = "3,7,61,25">
+				<AREA HREF = "links.html" SHAPE = "rect" COORDS = "168,5,197,25">
+		 
+				<!-- value "poly" creates a hotspot in the SHAPE -->
+				<!-- of a polygon, defined by COORDS             -->
+				<AREA HREF = "mailto:sc.chan@cpce-polyu.edu.hk"
+					SHAPE = "poly"
+					COORDS = "162,25,154,39,158,54,169,51,183,39,161,26">
+		   
+				<!-- SHAPE = "circle" indicates a circular -->
+				<!-- area with the given center and radius -->
+				<AREA HREF = "mailto:sc.chan@cpce-polyu.edu.hk" 
+					SHAPE = "circle" COORDS = "100,36,33">
+			</MAP>
+
+			<!-- <img src =... usemap = "#id"> indicates that the -->
+			<!-- specified image map is used with this image      -->
+			<IMG SRC = "deitel.gif" WIDTH = "200" HEIGHT = "144" USEMAP = "#picture">
+		</P>
+	</BODY>
+</HTML>
