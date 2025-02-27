@@ -1,0 +1,46 @@
+<HTML>
+	<HEAD>
+		<TITLE>HTML Form - submit</TITLE>
+	</HEAD>
+	<BODY>
+		<FORM>
+			<P>Username: <INPUT TYPE="text" NAME="p_username"></P>
+			<P>Name: <INPUT TYPE="text" NAME="p_name" SIZE="50"></P>
+			
+			<P>Password: <INPUT TYPE="password" NAME="p_password"></P>
+			
+			<P>What is your favourite sport(s)?<BR>
+			<INPUT TYPE="checkbox" NAME="p_sport" VALUE="football">Football<BR>
+			<INPUT TYPE="checkbox" NAME="p_sport" VALUE="baseball" CHECKED>Baseball<BR>
+			<INPUT TYPE="checkbox" NAME="p_sport" VALUE="basketball">Basketball<BR>
+			</P>
+			
+			<P>What is your gender?<BR>
+			<INPUT TYPE="radio" NAME="p_gender" VALUE="m" CHECKED>Male<BR>
+			<INPUT TYPE="radio" NAME="p_gender" VALUE="f">Female<BR>
+			</P>
+			
+			<P>Comments:<BR>
+			<TEXTAREA NAME = "p_comment" ROWS="4" COLS="40">Default text here...
+			</TEXTAREA>
+			</P>
+			
+			<P>Your favourite fruit:<BR>
+			<SELECT NAME="p_fruit" SIZE=4>
+				<OPTION VALUE="apple"> Apple
+				<OPTION VALUE="banana" SELECTED> Banana
+				<OPTION VALUE="pineapple"> Pineapple
+				<OPTION VALUE="orange"> Orange
+			</SELECT>
+			</P>
+			
+			<P>Secret:<BR>
+			<INPUT TYPE="hidden" NAME="p_secret" VALUE="This is secret!">
+			</P>
+			
+			<INPUT TYPE="reset">
+			<BR><BR>
+			<INPUT TYPE="submit">
+		</FORM>
+	</BODY>
+</HTML>
