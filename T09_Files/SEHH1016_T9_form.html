@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title> A simple PHP calculator </title>
+	</head>
+	<body>
+		<!-- Create the form element -->
+		<!-- Specify the start tag of the form here -->
+		<form action="SEHH1016_T9_cal.php" method="POST">
+			<table border="0" cellspacing="5">
+				<caption> <b>A simple calculator</b> </caption>
+
+				<tr>
+					<td> What is your name? </td>
+					<td> 
+						<!-- Put a textbox for name here. Use "username" as the name of the textbox -->
+						<input type="text" name="username"/>
+					</td>
+				</tr>
+				<tr>
+					<td> Enter the first operand: </td>
+					<td> 
+						<!-- Put a textbox for first operand here. Use "operand1" as the name of the textbox -->
+						<input type="text" name="operand1"/>
+					</td>
+				</tr>
+				<tr>
+					<td> Enter the second operand: </td>
+					<td> 
+						<!-- Put a textbox for second operand here. Use "operand2" as the name of the textbox -->
+						<input type="text" name="operand2"/> 
+					</td>
+				</tr>
+				<tr>
+					<td> Specify the operation: </td>
+					<td> 
+						<input type="radio" name="operation" value="add"/> Add <br />
+						<!-- Following the method for radio button above, add three more radio buttons here. -->
+						<!-- They have: name = "operation" (used to identify the radio button list) -->
+						<!-- Each has different values: e.g. "sub" for Subtract, "mul" for Multiply, "div" for Divide -->
+						<!-- e.g. if user chooses "Add", at the server side in the PHP file we have $_POST["operation"] == "add" -->
+						<input type="radio" name="operation" value="sub"/> Subtract <br />
+						<input type="radio" name="operation" value="mul"/> Multiply <br />
+						<input type="radio" name="operation" value="div"/> Divide <br />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"> 
+						<!-- Put the submit button and reset button here -->
+						<input type="Submit" /> <input type="Reset" />
+					</td>
+				</tr>
+			</table>
+		</form>
+		<!-- End your form here -->
+	</body>
+</html>
