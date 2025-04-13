@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<style>
+		span.block { display:block; padding: 10px; margin: 10px; border: 1px solid blue; width: 100px; height: 50px; }
+		span.inline { display: inline; padding: 10px; margin: 10px; border: 1px solid green; width: 100px;height: 50px; }
+		span.inlineblock { display: inline-block; padding: 5px; margin: 5px; border: 1px solid red; width: 100px;height: 50px; }
+		.onethird { float: left; width: 30%; height: 400px; border: 2px solid black; margin: 5px; }
+		</style>
+	</head>
+	
+	<body>
+
+		<div>
+		This is a demo paragraph to showcase the display property.
+		</div>
+		
+		<div class="onethird">
+		<h2>Inline</h2>
+		This is a <span class="inline"> inline</span> demonstration using <span class="inline">span</span> tag. <br>
+		This is second line of the paragraph.
+		</div>
+		
+		<div class="onethird">
+		<h2>Block</h2>
+		This is a <span class="block"> block</span> demonstration using <span class="block">span</span> tag.<br>
+		This is second line of the paragraph.
+		</div>
+		
+		<div class="onethird">
+		<h2>Inline-Block</h2>
+		This is a <span class="inlineblock"> inline-block</span> demonstration using <span class="inlineblock">span</span> tag.<br>
+		This is second line of the paragraph.
+		</div>
+
+	</body>
+</html>

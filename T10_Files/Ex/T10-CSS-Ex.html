@@ -1,0 +1,165 @@
+<html>
+
+<head>
+	<title>CSS Exercise</title>
+	<style>
+		/* Comment - Given Style */
+
+		table caption {
+			text-align: center;
+		}
+
+		th {
+			padding: 10px;
+			background-color: mediumblue;
+			color: white;
+			font-family: Verdana;
+		}
+
+		td {
+			padding: 10px;
+		}
+
+		form {
+			width: 500px;
+			background-color: ivory;
+			margin: 10px;
+		}
+
+		table {
+			padding: 5px;
+			border: 2px dotted indigo;
+			border-radius: 10px;
+		}
+
+		/* CSS Comment - Exercise of CSS */
+
+		body {
+			background-color: mintcream;
+		}
+
+		.image_right {
+			float: right;
+			width: 50px;
+			margin: 10px;
+		}
+
+		h1, h2 {
+			font-size: 16px;
+			font-family: Georgia;
+			font-weight: bold;
+			text-decoration: underline;
+			color: navy;
+		}
+
+		tr.highlight {
+			background-color: skyblue;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+		span.form_row {
+			display: block;
+			margin-top: 2px;
+			border-left: 3px solid skyblue;
+		}
+
+		span.label {
+			display: inline-block;
+			padding: 5px;
+			width: 80px;
+			text-align: right;
+			font-weight: bold;
+		}
+
+		input.btn {
+			background-color: skyblue;
+			color: white;
+			padding: 5px;
+			margin: 5px;
+		}
+
+		#btn_submit {
+			display: inline-block;
+			float: right;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Introduction</h1>
+
+	<p>This is a sample paragraph for introduction.
+		<img class="image_right" src="CSS3.png" alt="CSS 3 logo">
+		We have learn about basic formatting, image and link, table and forms.
+	</p>
+
+	<h2>Table</h2>
+	<table>
+		<caption>Tutorial Review</caption>
+		<tr>
+			<th>Tutorial</th>
+			<th>Topic</th>
+			<th>Summary</th>
+		</tr>
+		<tr>
+			<td>02</td>
+			<td>Basic HTML</td>
+			<td>Basic formatting, </td>
+		</tr>
+		<tr class="highlight">
+			<td>03</td>
+			<td>HTML Link and Image</td>
+			<td>use of &lt;a&gt; and &lt; img &gt; tags</td>
+		</tr>
+		<tr>
+			<td>04</td>
+			<td>HTML Table </td>
+			<td>We learn to use table and imagemap</td>
+		</tr>
+		<tr class="highlight">
+			<td>05</td>
+			<td>HTML Form</td>
+			<td>In this tutorial, we learn to create a FORM with variable input</td>
+		</tr>
+	</table>
+
+	<h1>Form</h1>
+	<form method="GET" action="mailto:sc.chan@cpce-polyu.edu.hk">
+
+		<div class="form_body">
+			<span class="form_row">
+				<span class="label">Name:</span>
+				<span class="input"><input type="text" name="name" value=""></span>
+			</span>
+			<span class="form_row">
+				<span class="label">Gender:</span>
+				<span class="input">
+					<input type="radio" name="gender" value="Male" checked>Male
+					<input type="radio" name="gender" value="Female">Female
+				</span>
+			</span>
+			<span class="form_row">
+				<span class="label">Age:</span>
+				<span class="input">
+					<select name="age">
+						<option> &lt; 18 </option>
+						<option selected> 18 - 25 </option>
+						<option> 25 - 40 </option>
+						<option> 40 - 65 </option>
+						<option> &gt; 65 </option>
+					</select>
+				</span>
+			</span>
+			<span class="form_row">
+				<input class="btn" type="reset" value="Reset">
+				<input class="btn" id="btn_submit" type="submit" value="Send now">
+
+			</span>
+		</div>
+	</form>
+
+</body>
+
+</html>
